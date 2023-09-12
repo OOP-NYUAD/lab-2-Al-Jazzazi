@@ -2,10 +2,17 @@
 #include <iostream>
 
 
+    // Default constructor.
+    // Initialize 'balance' to 0.
+    Account::Account(){
+        balance = 0;
+    }
 
     // Parameterized constructor.
-    // Initialize 'balance' with the provided 'initialBalance'.
-    
+    // Initialize 'balance' with the provided 'balance'.
+    Account::Account(double balance){
+        this->balance = balance;
+    }
 
     // Getter function to return the current balance.
     double Account::getBalance(){
@@ -32,6 +39,10 @@
             return;
         }
         balance -= amount;
+    }
+
+    Account::~Account(){
+        cout << "Account with balance " << balance << " is being destroyed." <<endl;
     }
 
 

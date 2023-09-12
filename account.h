@@ -23,15 +23,13 @@ private:
 public:
     // Default constructor.
     // Initialize 'balance' to 0.
-    Account(){
-        balance = 0;
-    }
-    Account(double balance){
-        this->balance = balance;
-    }
+    Account();
 
     // Parameterized constructor.
-    // Initialize 'balance' with the provided 'initialBalance'.
+    // Initialize 'balance' with the provided 'balance'.
+    Account(double balance);
+
+   
     
 
     // Getter function to return the current balance.
@@ -48,9 +46,7 @@ public:
 
     // Destructor.
     // Display a message indicating the account is being destroyed.
-    ~Account(){
-        cout << "Account with balance " << balance << " is being destroyed." <<endl;
-    }
+    ~Account();
 };
 
 #endif // ACCOUNT_H
