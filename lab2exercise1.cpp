@@ -2,11 +2,13 @@
 #include "account.h"
 
 int main() {
+    
+    // Create another Account object with an initial balance of $1000.
+    Account account2(1000.0);
+
     // Create an Account object using the default constructor.
     Account account1;
 
-    // Create another Account object with an initial balance of $1000.
-    Account account2(1000.0);
 
     // Test the 'getBalance' function to retrieve the balance of both accounts and print them.
     std::cout << "Account 1 balance: " << account1.getBalance() << std::endl;
