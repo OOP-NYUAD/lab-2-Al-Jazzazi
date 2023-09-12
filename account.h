@@ -35,31 +35,16 @@ public:
     
 
     // Getter function to return the current balance.
-    double getBalance(){
-        return balance;
-    }
+    double getBalance();
 
     // Setter function to set the balance to a new value.
-    void setBalance(double newBalance){
-        if (newBalance < 0){
-            cout <<"you cannot set account balance to a negative value" <<endl;
-        }
-        balance = newBalance;
-    }
+    void setBalance(double newBalance);
 
     // Function to deposit an amount into the account.
-    void deposit(double amount){
-        balance += amount;
-    }
+    void deposit(double amount);
 
     // Function to withdraw an amount from the account.
-    void withdraw(double amount){
-        if (balance - amount <0){
-            cout << "Insufficient funds!" <<endl;
-            return;
-        }
-        balance -= amount;
-    }
+    void withdraw(double amount);
 
     // Destructor.
     // Display a message indicating the account is being destroyed.
